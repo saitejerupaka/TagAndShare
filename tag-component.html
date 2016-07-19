@@ -1,0 +1,20 @@
+<div>
+	<div id='imageWrapper' class='wrapper' ng-model="wrapper" width="30%">
+		<!-- <canvas id='imageView' class='canvas'></canvas> -->
+		<img #picTag id='picTag'  src='../images/insperity_logo.png' original-Image-Dir height='100'
+		 width='200' class='canvas'  (click)="getMousePos($event)"/>	
+	<!-- <div id='tag' class='tag'>	</div> -->
+	<tag [top]='top' [left]= 'left' *ngIf='top >= 0'>
+
+	</tag>
+	</div>
+	
+	<div id='imageView' class='wrapper' width="70%">
+		<!-- <canvas id='imageView' class='canvas'></canvas> -->
+		<img id='picView' src='../images/insperity_logo.png' height='300' width='300' class='canvas' />	
+		<tag [top]='scaledY' [left]= 'scaledX' *ngIf='top >= 0'>
+
+	</tag>
+	<!-- <div id='tag' class='tag'>	</div> -->
+	</div>
+</div>
