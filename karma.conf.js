@@ -19,6 +19,7 @@ module.exports = function(config) {
       'node_modules/rxjs/bundles/Rx.umd.js',
       'node_modules/angular2/bundles/angular2-all.umd.js',
       './test/**/*.js',
+      './app/scripts/tags/tag.directive.js',
       './app/scripts/tags/tag.component.js',
       './app/scripts/main.js'
     ],
@@ -38,7 +39,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress', 'coverage'],
+    reporters: ['progress', 'coverage', 'clear-screen'],
 
 
     // web server port
